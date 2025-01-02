@@ -15,6 +15,8 @@ from rollout import rollout_simulation
 import asal_metrics
 import util
 
+os.makedirs("outputs", exist_ok=True)
+
 save_dir = "./data/supervised_0"
 data = util.load_pkl(save_dir, "data")  # load optimization data
 params, best_loss = util.load_pkl(save_dir, "best")  # load the best parameters found
@@ -57,7 +59,7 @@ plt.text(
     fontsize=20,
     transform=plt.gca().transAxes,
 )
-plt.savefig("optimization.png")
+plt.savefig("outputs/optimization.png")
 
 plt.figure(figsize=(20, 6))
 img = np.array(rollout_data["rgb"])
@@ -73,4 +75,4 @@ plt.xticks(
 plt.yticks([], fontsize=15)
 plt.title("Visualizing the Simulation Rollout", fontsize=25)
 plt.xlabel("Simulation Timestep", fontsize=20)
-plt.savefig("simulation_rollout.png")
+plt.savefig("outputs/simulation_rollout.png")
