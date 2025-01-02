@@ -9,11 +9,11 @@ import matplotlib.pyplot as plt
 from tqdm.auto import tqdm
 from einops import rearrange, reduce, repeat
 
-import substrates
-import foundation_models
-from rollout import rollout_simulation
-import asal_metrics
-import util
+from .. import substrates
+from .. import foundation_models
+from ..rollout import rollout_simulation
+from .. import asal_metrics
+from .. import util
 
 save_dir = "./data/supervised_0"
 data = util.load_pkl(save_dir, "data")  # load optimization data
