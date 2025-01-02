@@ -9,7 +9,7 @@ python main_opt.py \
     --coef_softmax=0. \
     --coef_oe=0. \
     --bs=1 \
-    --pop_size=32 \
+    --pop_size=1024 \
     --rollout_steps=100 \
     --n_iters=10000 \
     --sigma=0.1
