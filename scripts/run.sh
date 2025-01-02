@@ -10,6 +10,6 @@ python main_opt.py \
     --coef_oe=0. \
     --bs=1 \
     --pop_size=1024 \
-    --rollout_steps=100 \
+    --rollout_steps=2048 \
     --n_iters=10000 \
     --sigma=0.1
