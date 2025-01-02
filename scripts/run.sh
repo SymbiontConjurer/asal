@@ -1,4 +1,4 @@
-!#/usr/env/bash
+#!/usr/bin/env bash
 python main_opt.py \
     --seed=0 \
     --save_dir="./data/supervised_0" \
