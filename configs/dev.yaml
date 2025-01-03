@@ -1,0 +1,16 @@
+prompts: 
+  - a yellow butterfly
+seed: 0
+rollout_steps: 1000
+model: clip
+time_sampling: 1
+
+coef_prompt: 1.0
+coef_softmax: 0.0
+coef_oe: 0.0
+
+population_size: 32
+num_iterations: 100
+mutation_rate: 0.05
+
+bs: 32
