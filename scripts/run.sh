@@ -4,12 +4,12 @@ python main_opt.py \
     --save_dir="./data/supervised_0" \
     --substrate='lenia' \
     --time_sampling=1 \
-    --prompts="a long caterpillar" \
+    --prompts="a single long caterpillar" \
     --coef_prompt=1. \
     --coef_softmax=0. \
     --coef_oe=0. \
-    --bs=1 \
+    --bs=32 \
     --pop_size=32 \
-    --rollout_steps=2048 \
-    --n_iters=100 \
-    --sigma=0.1
+    --rollout_steps=1000 \
+    --n_iters=200 \
+    --sigma=0.05
